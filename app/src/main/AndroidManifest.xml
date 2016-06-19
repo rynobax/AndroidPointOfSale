@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="baxley.ryan.pizzasalesystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pizza"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.admin.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.admin.ingredients.ManageIngredientsActivity"
+            android:label="@string/title_activity_ingredients"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.admin.ingredients.IngredientCreateActivity"
+            android:label="@string/title_activity_ingredient_create"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.admin.ingredients.IngredientEditActivity"
+            android:label="@string/title_activity_ingredient_edit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.order.OrderActivity"
+            android:label="@string/title_activity_order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.order.PizzaActivity"
+            android:label="@string/title_activity_pizza"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.order.PickToppingActivity"
+            android:label="@string/title_activity_pick_topping"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.order.FinishOrderActivity"
+            android:label="@string/title_activity_finish_order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.admin.PreferenceActivity"
+            android:label="@string/title_activity_preference"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.admin.PastOrdersActivity"
+            android:label="@string/title_activity_past_orders"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.admin.InfoActivity"
+            android:label="@string/title_activity_info"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

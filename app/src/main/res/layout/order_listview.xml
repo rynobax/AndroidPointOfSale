@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pizza_listview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="false"
+        android:paddingLeft="8dp"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:text="12.50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="March 5"
+        android:id="@+id/order_listview_date"
+        android:layout_toRightOf="@+id/pizza_listview_name"
+        android:layout_marginLeft="50dp"
+        android:layout_centerVertical="true"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

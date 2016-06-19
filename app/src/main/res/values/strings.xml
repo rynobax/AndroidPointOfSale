@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PizzaSaleSystem</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_ingredients">IngredientsActivity</string>
+    <string name="title_activity_ingredient_create">IngredientCreateActivity</string>
+    <string name="title_activity_ingredient_edit">IngredientEditActivity</string>
+    <string name="title_activity_order">OrderActivity</string>
+    <string name="title_activity_pizza">PizzaActivity</string>
+    <string name="show_active">Show Active</string>
+    <string name="show_inactive">Show Inactive</string>
+    <string name="title_activity_pick_topping">PickToppingActivity</string>
+    <string name="title_activity_finish_order">FinishOrderActivity</string>
+    <string name="title_activity_preference">PreferenceActivity</string>
+    <string name="title_activity_past_orders">PastOrdersActivity</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="info_text">This app is a basic point of sales app for a pizza restaurant.  The goal of the app was to   I decided to limit the scope of the app to only allow pizzas in interest of time, but I tried to design it in a manner which would allow it to be easily scaled upwards.  Creating an order should be fairly straightforward for the user.  Once the order has been payed for (which is not implemented in this app), the order is added to an external database via http and php.  The app currently uses my website to handle the database requests.  I have included the php files in the project folder, as well as on my website.  The database the app uses is hosted on buffet.cs.clemson.edu.  Another functionality of the app is the ability to manage the current ingredients of the restaurant.  You can add ingredients, as well as disable ingredients that are no longer offered.  Right now these ingredients are either of type topping or crust, but more types can be easily added.  The app also allows the user to define the sales tax used by the app, in the settings menu.  Finally, the app also includes a basic way to view past orders.  The time and price of the orders are displayed in a list, and clicking on an order will show you the ingredients on each of the pizzas ordered.  This app was created by Ryan Baxley.  The help resources I used extensivly were StackOverflow and the Android API.</string>
+    <string name="preference_file_key">preferences</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dbpizza_listview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="false"
+        android:paddingLeft="8dp"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:text="12.50" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dbpizza_listview_ingredient_list"
+        android:layout_alignParentBottom="false"
+        android:layout_toRightOf="@+id/dbpizza_listview_name"
+        android:layout_toEndOf="@+id/dbpizza_listview_name"
+        android:layout_alignTop="@+id/dbpizza_listview_name"></LinearLayout>
+
+</RelativeLayout>

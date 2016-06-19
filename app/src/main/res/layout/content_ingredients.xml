@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.admin.ingredients.ManageIngredientsActivity"
+    tools:showIn="@layout/activity_ingredients">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ingredientTypeSpinner"
+        android:layout_alignBottom="@+id/toggleButton"
+        android:layout_alignTop="@+id/toggleButton"
+        android:layout_toLeftOf="@+id/toggleButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Inactive"
+        android:id="@+id/toggleButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textSize="36sp"
+        android:layout_gravity="right"
+        android:layout_alignParentBottom="false"
+        android:onClick="toggleIngredients" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ingredientList"
+        android:layout_below="@+id/toggleButton"
+        android:layout_marginTop="15dp"
+        android:layout_above="@+id/addButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Ingredient"
+        android:id="@+id/addButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="false"
+        android:layout_centerHorizontal="true"
+        android:textSize="36sp"
+        android:onClick="addIngredient" />
+
+</RelativeLayout>
